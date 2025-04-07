@@ -1,2 +1,0 @@
-# MMIT
-MMIT Website
