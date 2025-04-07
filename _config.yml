@@ -1,1 +1,18 @@
-title: Maple Mountain IT Test
+title: Maple Mountain IT
+description: Modern, personable IT services for businesses in Utah and beyond.
+baseurl: ""        # leave empty for a custom domain (like maplemountainit.com)
+url: "https://www.maplemountainit.com"
+
+# Disable default theme (important!)
+theme: null
+
+# Include any directories that Jekyll normally ignores
+include:
+  - _pages
+  - _layouts
+  - css
+  - styles.css
+
+# Optional: enable future posts or markdown support
+future: true
+markdown: kramdown
