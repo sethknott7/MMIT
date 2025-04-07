@@ -1,6 +1,10 @@
+
 /* Global Styles */
-body {
+html, body {
   margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
   background-color: #f8f9fb;
   color: #1c1c1e;
@@ -9,12 +13,13 @@ body {
 
 /* Header */
 header {
-  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  background-color: #ffffff;
   padding: 20px 40px;
+  box-sizing: border-box;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: sticky;
   top: 0;
@@ -30,7 +35,10 @@ header {
 nav {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-end;
   align-items: center;
+  max-width: 100%;
+  overflow: hidden;
 }
 
 nav a {
@@ -102,7 +110,7 @@ footer {
   color: #6e6e73;
 }
 
-/* Responsive Header */
+/* Responsive Layout */
 @media (max-width: 768px) {
   header {
     flex-direction: column;
@@ -110,12 +118,25 @@ footer {
   }
 
   nav {
-    margin-top: 10px;
+    width: 100%;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 10px;
   }
 
   nav a {
     margin: 8px 0;
+  }
+
+  .hero h1 {
+    font-size: 2em;
+  }
+
+  .hero p {
+    font-size: 1em;
+  }
+
+  .intro {
+    padding: 60px 20px;
   }
 }
