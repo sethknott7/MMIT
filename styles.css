@@ -56,11 +56,12 @@ nav a:hover {
 /* Hero Section */
 .hero {
   position: relative;
-  background: linear-gradient(to bottom right, #3c4a5f, #202c3b);
+  background: url('/img/hero.jpg') center center / cover no-repeat;
   color: white;
   text-align: center;
   padding: 120px 20px;
   overflow: hidden;
+  min-height: 60vh;
 }
 
 .hero-content {
